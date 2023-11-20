@@ -1,0 +1,92 @@
+JavaScript in <head> or <body>
+	Example:
+		A function is placed in the head, and when function is called, by clicking a button
+		it changes.
+		
+		<!DOCTYPE html>
+		<html>
+		<head>
+		<script>
+		function myFunction(){
+			document.getElementById("demo").innerHTML = "Paragraph Changed.";
+		}
+		</script>
+		</head>
+		<body>
+		
+		<h2>Demo JavaScript in Head</h2>
+		
+		<p id="demo"> A paragraph </p>
+		<button type="button" onclick="myFunction()"> Try it</button>
+		</body>
+		
+- Placing scripts at the bottom of the <body> element improves the display speed
+
+
+External JavaScript
+	-Use it when the same code is used in many different web pages
+	- have the file extension .js
+	
+	To use:
+		<script src ="myScript.js"></script>
+	
+	-cannot contain <script> tags
+	
+	Advantages:
+	-separates the html and code
+	-makes html and javascript easier to read
+	-cached javascript files can speed up page laods
+	-can add several script tags to one page
+	
+	<script src ="myScript.js"></script>
+	<script src ="myScript2.js"></script>
+	
+	How to reference:
+		-with a full url
+		-with a file path
+		-without any file path
+	
+
+Output:
+	Using:
+		-innerHTML
+			defines variables like
+		-document.write();
+			gets rid of all html before
+		-window.alert().
+			pops a new small notification window
+		-console.log();
+		
+		Using InnerHTML
+			-access by document.getElementById(id) with id attribute
+			that defines the HTML element
+			
+			<p id="demo"></p>
+			
+			<script>
+				document.getElementById("demo").innerHTML= 9+0;
+			</script>
+			
+		Using document.write():
+			-gets rid of all the html elements before so use carefully
+			
+			<script>
+			document.write(9+0);
+			</script>
+			
+			or
+			
+			<button type="button" onclick="document.write(6+9)"> Try it</button>
+			
+		using window.alert:
+			<script> window.alert(7+0);
+			</script>
+			
+			* window is the global scope object, so you don't need to specify
+			it since it is default
+			
+			<script> alert(8+0);
+			</script>
+			
+			
+			

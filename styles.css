@@ -1,0 +1,123 @@
+body{
+	background:light blue;
+	
+}
+h1 {
+	color: white;
+	text-align: left;
+	font-style:italic;
+	font-family: Calibri;
+	padding: 10px;
+	width: 100%;
+	
+	
+	
+}
+header {
+	
+	width:100%;
+	background-color:slateblue;
+
+	
+	
+}
+
+
+h2{
+	
+	color:maroon;
+
+	border: red;
+}
+
+
+
+div{
+	
+	background-color:lightblue;
+	color:white;
+	padding: 10 px;
+
+	
+}
+
+footer{
+	background-color:slateblue;
+	padding:10px;
+	text-align:center;
+	color:white;
+	width: 100%;
+	
+}
+
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	background-color:#f1f1f1;
+
+	overflow:hidden;
+	
+	
+}
+/*Makes the navigation bar horizontal*/
+li{
+
+	float:left;
+	
+}
+
+/*Makes a color when mouse is over navigation bar*/
+
+li a:hover{
+
+		background-color:#555;
+		color:white;
+}
+
+.active{
+	background-color:#04AA6D;
+	color:white;
+}
+
+.row{
+	display:flex;
+	
+}
+
+/*Style the search box*/
+#mySearch{
+	
+	
+	font-size: 18px;
+	padding:11px;
+	border: 1px solid #ddd;
+	float:right;
+	
+}
+
+#myMenu{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	
+}
+
+#myMenu li a{
+	padding:12px;
+	text-decoration:none;
+	color:black;
+	display:block;
+	
+}
+
+/*Style the search box inside navigation bar*/
+.topnav input[type=text]{
+	float:right;
+	padding: 6px;
+	border:none;
+	margin-top:8px;
+	margin-right: 16px;
+	font-size:17px;
+}
